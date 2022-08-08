@@ -19,7 +19,7 @@ composer require elbgoods/nova-mapbox-marker-field
 
 ## Usage
 
-Expect a mapbox access-token specified in `config/services.php`:
+Expects a mapbox access-token specified in `config/services.php`:
 
 ```php
 <?php
