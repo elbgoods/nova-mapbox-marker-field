@@ -4,7 +4,7 @@ namespace Elbgoods\NovaMapboxMarkerField;
 
 use Laravel\Nova\Fields\Field;
 
-class NovaMapboxMarkerField extends Field
+class MapboxMarkerField extends Field
 {
     public $component = 'nova-mapbox-marker-field';
 

@@ -31,12 +31,12 @@ return [
 ```
 
 ```php
-use Elbgoods\NovaMapboxMarkerField\NovaMapboxMarkerField;
+use Elbgoods\NovaMapboxMarkerField\MapboxMarkerField;
 
 public function fields(Request $request)
 {
     return [
-        NovaMapboxMarkerField::make('Marker')
+        MapboxMarkerField::make('Marker')
             ->longitude($this->longitude)
             ->latitude($this->latitude)
             ->zoom(8),

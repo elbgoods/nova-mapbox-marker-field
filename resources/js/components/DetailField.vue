@@ -14,15 +14,7 @@ export default {
   props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
   data() {
     return {
-      map: null,
-      draw: null,
-      geoJsonSource: {
-        type: "geojson",
-        data: {
-          type: "Feature",
-          geometry: this.field.geoJson,
-        }
-      }
+      map: null
     };
   },
   mounted() {
@@ -44,20 +36,8 @@ export default {
       showCompass: false
     }), 'top-left');
 
+    // marker
     this.map.on('load', () => {
-      // shape
-      this.map.addSource('layer', this.geoJsonSource)
-      this.map.addLayer({
-        id: 'layer',
-        type: 'fill',
-        source: 'layer',
-        layout: {},
-        paint: {
-          'fill-color': '#0080ff', // blue color fill
-          'fill-opacity': 0.5
-        }
-      });
-      // marker
       new mapboxgl.Marker()
           .setLngLat([longitude, latitude])
           .addTo(this.map);
@@ -69,6 +49,6 @@ export default {
 @import "~mapbox-gl/dist/mapbox-gl.css";
 
 #mapContainer {
-  height: 450px;
+  height: 480px;
 }
 </style>
