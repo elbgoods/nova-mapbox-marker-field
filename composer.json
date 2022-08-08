@@ -1,0 +1,45 @@
+{
+    "name": "elbgoods/nova-mapbox-marker-field",
+    "description": "Show geo marker on a mapbox map",
+    "keywords": [
+        "laravel",
+        "nova",
+        "mapbox",
+        "geo"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Staack",
+            "email": "mstaack@elbgoods.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/nova": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elbgoods\\NovaMapboxMarkerField\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elbgoods\\NovaMapboxMarkerField\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ]
+}
