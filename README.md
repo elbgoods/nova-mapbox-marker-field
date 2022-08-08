@@ -7,7 +7,7 @@
 
 ## Features
 
-- Shows a geo marker based on latitude & longitude
+- Shows a dead simple geo marker based on latitude & longitude
 
 ## Installation
 
@@ -46,6 +46,7 @@ public function fields(Request $request)
 
 ## Screenshot
 
+![Detail View](docs/field.png)
 
 ## License
 
