@@ -31,7 +31,7 @@ return [
 ```
 
 ```php
-use Elbgoods\NovaMapboxField\NovaMapboxMarkerField;
+use Elbgoods\NovaMapboxMarkerField\NovaMapboxMarkerField;
 
 public function fields(Request $request)
 {
